@@ -18,14 +18,14 @@ public class problem4_13 {
 	
 	private static String check(String character) {
 		char ch = character.charAt(0);
-		Character.toLowerCase(ch);
+		ch = Character.toLowerCase(ch); // JA
 
 		if (Character.isLetter(ch) != true) {
 			String result = "an invalid input.";
 			return result;
 		}
-		else if (character == "a" || character == "i" || character == "u"
-				|| character == "e" || character == "o") {
+		else if (ch == 'a' || ch == 'i' || ch == 'u'
+				|| ch == 'e' || ch == 'o') { // JA
 			String result = "a vowel.";
 			return result;
 		} else {

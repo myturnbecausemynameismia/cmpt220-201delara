@@ -1,4 +1,5 @@
 //This program
+// JA: The idea was to print the complete table with a loop.
 public class problem5_5 {
 
 	public static void main(String[] args) {
