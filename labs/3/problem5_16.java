@@ -10,9 +10,10 @@ public class problem5_16 {
 		String statement = "All the factors of " + num + " are: ";
 		
 		
-		for (int i = 1; i <= num; i++) {
-			if (num % i == 0) {
+		for (int i = 2; i <= num; i++) {
+			while (num % i == 0) { // JA
 				statement += i + " ";
+				num /= i;
 			}
 		}
 		System.out.print(statement);
