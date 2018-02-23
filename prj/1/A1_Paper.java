@@ -1,4 +1,3 @@
-package sd;
 import java.util.Scanner;
 
 public class A1_Paper {
@@ -138,9 +137,10 @@ public class A1_Paper {
                         if(java.lang.Math.abs((float) totalArea - a1Area) > (float) Math.pow(10, -5)) {
                             tapeLength += dimensions[i][1];
                             if((numOfEach[i - 1] == 0) && (k % 2 == 0)) {
-                                tapeLength += dimensions[i][0];
+                                tapeLength += dimensions[i][0] * 2;
                             }
-                        }
+                        } else
+                        	tapeLength -= dimensions[i][1];
                     } 
                 }
             }
@@ -154,9 +154,10 @@ public class A1_Paper {
                         if(java.lang.Math.abs((float) totalArea - a1Area) > (float) Math.pow(10, -5)) {
                         	tapeLength += dimensions[i][0];
                         	if(numOfEach[i - 1] == 0) {
-                        		tapeLength += dimensions[i][1];
+                        		tapeLength += dimensions[i][1] * 2;
                         	}
-                        }
+                        } else
+                        	tapeLength -= dimensions[i][0];
                     }
                 }
             }
