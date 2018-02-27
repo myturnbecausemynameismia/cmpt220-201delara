@@ -1,4 +1,4 @@
-package sd;
+//package sd;
 
 //This program reads 10 given numbers, displays the number of distinct numbers, and displays
 	//them in order inputed
