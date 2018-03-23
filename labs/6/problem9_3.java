@@ -12,7 +12,7 @@ public class problem9_3 {
 		System.out.println("Today's date is " + resultdate.toString());
 		//sdf.format(resultdate));
 		
-		for(long i = 100; i < (100000 * 100000); i *= 10) {
+        for(long i = 100; i < (100000 * 100000); i *= 10) { // could do i < 100000000000L;
 			Date newDate = new Date(milliseconds + i * 100);
 			System.out.println("The elapsed date (with elapsed time of " + i +
 					"00) is " +  newDate.toString());
