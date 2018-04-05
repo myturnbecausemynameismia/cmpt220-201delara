@@ -27,6 +27,6 @@ public class CourseRevised_3 {
   }  
   
   public void dropStudent(String student) {
-    // Left as an exercise in Exercise 10.9
+    students.remove(student);
   }
 }
