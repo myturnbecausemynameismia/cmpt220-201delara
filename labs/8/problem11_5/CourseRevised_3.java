@@ -1,3 +1,4 @@
+// JA: No test class?
 import java.util.ArrayList;
 
 public class CourseRevised_3 {
