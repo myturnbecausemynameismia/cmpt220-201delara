@@ -27,24 +27,26 @@ public class problem12_13 {
 		//
 		Scanner input = new Scanner(fileName);
 		while(input.hasNext()) {
-//			String s = input.nextLine();
-//            lines++;
-//            characters += s.length();
-//            String[] split = s.split(" ");
-//            for (String word : split) {
-//                words++;
-//            }
-			words++;
-			String s1 = input.nextLine();
-			characters += s1.length();
+			//String s1 = input.nextLine();
+			String s = input.nextLine();
+            lines++;
+            characters += s.length();
+            String[] split = s.split(" ");
+            for (String word : split) {
+                words++;
+            }
+			//words++;
+			
+			//characters += s1.length();
 			///STILL NEED TO COUNT LINES
-			lines += getLineCount(s1);
+			//lines += getLineCount(s1);
 		}
 		
 		System.out.println("File " + fileName + " has\n" + 
 		characters + " characters\n" +
 				words + " words\n" +
 				lines + " lines");
+		
 	}
 	
 	public static int getLineCount(String text){ //not sure if this works, not tested yet
