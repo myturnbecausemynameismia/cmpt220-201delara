@@ -10,6 +10,14 @@ public class ColorableTest {
 				new Pentagon(),
 				new Hexagon(),
 		};
+		
+		for (int i = 0; i < geometricObjects.length; i++) {
+			System.out.println(geometricObjects[i].getArea());
+			System.out.println(geometricObjects[i].getPerimeter());
+			
+			if(geometricObjects[i] instanceof Colorable)
+				((Colorable) geometricObjects[i]).howToColor();
+		}
 	}
 
 }
@@ -33,7 +41,7 @@ class Circle extends GeometricObject implements Colorable{
 
 	@Override
 	public void howToColor() {
-		System.out.print("Color entire circumference");
+		System.out.println("Color entire circumference");
 	}
 }
 class Triangle extends GeometricObject implements Colorable {
@@ -48,7 +56,7 @@ class Triangle extends GeometricObject implements Colorable {
 	}
 	@Override
 	public void howToColor() {
-		System.out.print("Color all three sides");
+		System.out.println("Color all three sides");
 	}
 
 	@Override
@@ -71,7 +79,7 @@ class Pentagon extends GeometricObject implements Colorable{
 	}
 	@Override
 	public void howToColor() {
-		System.out.print("Color all five sides");
+		System.out.println("Color all five sides");
 	}
 
 	@Override
@@ -94,7 +102,7 @@ class Hexagon extends GeometricObject implements Colorable {
 	
 	@Override
 	public void howToColor() {
-		System.out.print("Color all six sides");
+		System.out.println("Color all six sides");
 	}
 
 	@Override

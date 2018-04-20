@@ -1,9 +1,24 @@
 
 public class Square extends GeometricObject implements Colorable {
-	Square(){}
+	private double side;
+	
+	public double getSide() {
+		return side;
+	}
+	public void setSide(double side) {
+		this.side = side;
+	}
+	Square(){
+		side = 0;
+	}
+	
+	Square(double side) {
+		this.side = side;
+	}
+	
 	@Override
 	public void howToColor() {
-		System.out.print("Color all four sides");
+		System.out.println("Color all four sides");
 	}
 
 	@Override
