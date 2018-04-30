@@ -35,6 +35,8 @@ public class problem12_11 {
 		}
 		input.close();
 		output.close();
+		
+		// JA: You should rename the output file to be the input file
 	}
 
 }

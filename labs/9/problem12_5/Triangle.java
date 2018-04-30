@@ -1,4 +1,5 @@
 //HELP
+// JA: Where is the GeometricObject class?
 public class Triangle extends GeometricObject {
 	private double side1 = 1.0;
 	private double side2 = 1.0;

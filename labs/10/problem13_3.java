@@ -2,8 +2,7 @@ import java.util.ArrayList;
 
 public class problem13_3 {
 	public static void main(String[] args) {
-		
-		
+		// JA: ?
 	}
 	
 	public static void sort(ArrayList<Number> list) {

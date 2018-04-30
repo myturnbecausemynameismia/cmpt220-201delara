@@ -1,4 +1,4 @@
-
+// JA: Where is GeometricObject class?
 public class OctagonTest {
 
 	public static void main(String[] args) {
